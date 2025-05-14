@@ -264,7 +264,7 @@ const Resume = () => {
     }}>
       {/* PDF Viewer */}
       <iframe
-        src="/SawyerShoemaker_Resume.pdf#toolbar=0&navpanes=0&scrollbar=0"
+        src={process.env.PUBLIC_URL + "/SawyerShoemaker_Resume.pdf#toolbar=0&navpanes=0&scrollbar=0"}
         title="Resume PDF"
         style={{
           width: '100vw',
