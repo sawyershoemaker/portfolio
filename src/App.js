@@ -17,7 +17,7 @@ const Navbar = ({ currentTab, setTab }) => (
         <li key={tab.key}>
           {tab.key === 'resume' && currentTab === 'resume' ? (
             <a
-              href="/SawyerShoemaker_Resume.pdf"
+              href={process.env.PUBLIC_URL + "/SawyerShoemaker_Resume.pdf"}
               download="SawyerShoemaker_Resume.pdf"
               className={currentTab === tab.key ? 'active' : ''}
               style={{ cursor: 'pointer' }}
@@ -112,9 +112,9 @@ const PROJECTS = [
 ];
 
 const PROJECT_BANNERS = {
-  bea: '/images/bea banner.png',
-  clockwork: '/images/clockwork banner.png',
-  'true-miniplayer': '/images/true miniplayer banner.png',
+  bea: process.env.PUBLIC_URL + '/images/bea banner.png',
+  clockwork: process.env.PUBLIC_URL + '/images/clockwork banner.png',
+  'true-miniplayer': process.env.PUBLIC_URL + '/images/true miniplayer banner.png',
 };
 
 // Simple markdown link to HTML
