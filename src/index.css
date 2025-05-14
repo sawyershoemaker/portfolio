@@ -1,0 +1,4 @@
+/* Modern CSS Reset - minimal, since App.css covers most resets */
+* {
+  box-sizing: border-box;
+}
